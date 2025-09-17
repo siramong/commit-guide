@@ -112,6 +112,18 @@ Closes #123
 - `monitoring` - Logs y métricas
 - `security` - Configuración de seguridad
 
+### 📱 **Mobile & Cross-Platform**
+- `navigation` - Navegación entre pantallas
+- `storage` - AsyncStorage, MMKV, SecureStore
+- `notifications` - Push notifications, local notifications
+- `camera` - Funcionalidades de cámara
+- `location` - Geolocalización y mapas
+- `biometric` - TouchID, FaceID, fingerprint
+- `permissions` - Permisos del dispositivo
+- `offline` - Sincronización offline-first
+- `native` - Módulos nativos customizados
+- `expo` - Configuración y servicios de Expo
+
 ---
 
 ## ✨ Ejemplos del Mundo Real
@@ -180,6 +192,31 @@ git cf "añadir login OAuth"
 git cb "corregir timeout en API"
 ```
 
+### 🚀 **Comandos Específicos para RN + Expo**
+
+```ini
+[alias]
+    # Mobile específicos
+    cm = "!f() { git add -A && git commit -m \"📱 feat(mobile): $1\"; }; f"
+    cn = "!f() { git add -A && git commit -m \"🚀 feat(native): $1\"; }; f"
+    ce = "!f() { git add -A && git commit -m \"⚡ feat(expo): $1\"; }; f"
+    ca = "!f() { git add -A && git commit -m \"🍎 build(ios): $1\"; }; f"
+    cdr = "!f() { git add -A && git commit -m \"🤖 build(android): $1\"; }; f"
+    
+    # NativeWind específicos
+    cnw = "!f() { git add -A && git commit -m \"🎨 style(nativewind): $1\"; }; f"
+    cth = "!f() { git add -A && git commit -m \"🌙 feat(theme): $1\"; }; f"
+```
+
+**Uso rápido:**
+```bash
+git cm "implementar drawer navigation"
+git cnw "migrar componentes a NativeWind"
+git ce "configurar OTA updates"
+git ca "preparar build para TestFlight"
+git cdr "optimizar bundle size para Play Store"
+```
+
 ---
 
 ## 🎯 Checklist Pre-Commit
@@ -218,6 +255,13 @@ git cb "corregir timeout en API"
 - **[Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog)** - Auto-generar changelogs
 - **[Semantic Release](https://semantic-release.gitbook.io/)** - Versionado automático
 
+### 📱 **React Native + Expo Tools**
+- **[EAS CLI](https://docs.expo.dev/eas/)** - Build y deployment en la nube
+- **[Expo Development Build](https://docs.expo.dev/development/introduction/)** - Custom dev clients
+- **[Flipper](https://fbflipper.com/)** - Debugging avanzado RN
+- **[Reactotron](https://infinite.red/reactotron)** - Inspector de state y API calls
+- **[Metro Bundler](https://facebook.github.io/metro/)** - Optimización de bundles
+
 ### 📊 **Análisis**
 - **[Git History](https://github.com/pomber/git-history)** - Visualizar cambios
 - **[GitKraken](https://www.gitkraken.com/)** - Cliente Git visual
@@ -249,6 +293,30 @@ git cb "corregir timeout en API"
 🧪 test(views): añadir tests con factory_boy
 📦 build(deps): actualizar Django a LTS más reciente
 ♻️ refactor(serializers): simplificar con DRF viewsets
+```
+
+### 📱 **React Native + Expo + NativeWind**
+```bash
+✨ feat(navigation): implementar stack navigator con type safety
+🎯 feat(storage): integrar AsyncStorage con MMKV para performance
+📱 feat(gestures): añadir swipe gestures con react-native-gesture-handler
+🎨 style(theme): migrar StyleSheet a NativeWind classes
+🚀 perf(images): optimizar con expo-image y caching inteligente
+🔧 chore(expo): configurar EAS Build para production
+📦 build(android): generar AAB con firma automática
+🍎 build(ios): configurar fastlane para App Store deployment
+🔔 feat(notifications): implementar push notifications con Expo
+🗺️ feat(maps): integrar MapView con markers customizados
+📸 feat(camera): añadir captura de fotos con expo-camera
+🎵 feat(audio): implementar reproductor con expo-av
+🌐 feat(offline): cache de datos con react-query + AsyncStorage
+⚡ feat(splash): crear animated splash screen con Lottie
+🔒 feat(biometric): autenticación con TouchID/FaceID
+📐 style(responsive): implementar sistema responsive con NativeWind
+🎭 feat(animations): micro-interacciones con react-native-reanimated
+🌙 feat(theme): modo oscuro dinámico con sistema preferences
+🔄 feat(updates): OTA updates con expo-updates
+🧪 test(components): testing con @testing-library/react-native
 ```
 
 ---
